@@ -1,8 +1,40 @@
-# Welcome to your Expo app 👋
+# Bem Vindo(a) a Cantina-Virtual! 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+
+
+## Integrantes do grupo:
+
+- Ali Andrea Mamani Molle - 558052
+- Guilherme Linard F.R Gozzi - 555768
+- Lucas Vasquez Silva - 555159
+
+# Sobre:
+
+## Nome:
+
+- Cantina Virtual FIAP
+
+## Operação Escolhida:
+
+- Fila e Incerteza na Cantina:
+- Durante os dias de aula na FIAP, o tempo de intervalo é de apenas 15 minutos, o que gera grandes filas nas cantinas devido ao alto número de alunos. Muitas vezes, apenas a espera já consome metade ou todo o intervalo, obrigando os alunos a procurarem alternativas fora da faculdade, podendo causar atrasos para a aula seguinte.
+
+
+
+
+## Funcionalidades: 
+
+- Visualizar o cardapio
+- Adicionar produtos no carrinho
+- Escolher forma de pagamento
+- Pagar na hora
+- Reservar pedido para pagamento presencial
+
+# Como Rodar o Projeto:
+## Pré-requisitos:
+- 
+
 
 1. Install dependencies
 
