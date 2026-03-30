@@ -47,11 +47,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#ED1C24',
+    borderBottomColor: '#fe0058',
     paddingBottom: 10
   },
   add: {
-    color: '#ED1C24',
+    color: '#fe0058',
     fontWeight: 'bold'
   }
 });

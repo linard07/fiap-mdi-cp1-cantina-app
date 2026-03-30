@@ -1,11 +1,16 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🍔 Cantina FIAP</Text>
-
+<View style={styles.header}>
+    <Text style={styles.title}>Cantina</Text>
+  <Image 
+    source={require('../assets/images/logo.png')} 
+    style={styles.logo}
+  />
+</View>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('Menu')}
@@ -26,16 +31,27 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     marginBottom: 30,
-    color: '#ED1C24',
+    color: '#fe0058',
     fontWeight: 'bold'
   },
   button: {
-    backgroundColor: '#ED1C24',
+    backgroundColor: '#fe0058',
     padding: 15,
     borderRadius: 10
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold'
-  }
+  },
+ logo: {
+  width: 150,
+  height: 100,
+  resizeMode: 'contain',
+  marginBottom:30
+},
+header: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginLeft: 40
+},
 });
