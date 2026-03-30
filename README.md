@@ -101,6 +101,16 @@ Durante o desenvolvimento foram utilizados os seguintes hooks do React:
 - useState foi utilizado nas telas:
   - MenuScreen → Armazenar lista de produtos
   - CartScreen → Armazenar itens do carrinho
+ 
+---
+
+## Tecnologias Utilizadas
+
+- React Native
+- Expo
+- React Navigation
+- JavaScript
+
 
 ---
 
@@ -117,6 +127,7 @@ Foram criadas três telas principais:
 A navegação foi configurada no arquivo App.js utilizando NavigationContainer e createNativeStackNavigator, permitindo a transição entre as telas do aplicativo.
 
 Além disso, foram utilizados parâmetros de navegação para enviar dados entre as telas, como o envio do produto selecionado da tela Menu para a tela Cart.
+
 
 
 # Próximos Passos:
