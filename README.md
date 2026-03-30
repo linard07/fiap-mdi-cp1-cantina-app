@@ -1,50 +1,140 @@
-# Welcome to your Expo app 👋
+# Bem Vindo(a) a Cantina-Virtual! 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
 
-1. Install dependencies
+
+## Integrantes do grupo:
+
+- Ali Andrea Mamani Molle - 558052
+- Guilherme Linard F.R Gozzi - 555768
+- Lucas Vasquez Silva - 555159
+
+# Sobre:
+
+## Nome:
+
+- Cantina Virtual FIAP
+
+## Problema Escolhido:
+
+- Fila e Incerteza na Cantina:
+- Durante os dias de aula na FIAP, o tempo de intervalo é de apenas 15 minutos, o que gera grandes filas nas cantinas devido ao alto número de alunos. Muitas vezes, apenas a espera já consome metade ou todo o intervalo, obrigando os alunos a procurarem alternativas fora da faculdade, podendo causar atrasos para a aula seguinte.
+- O aplicativo **Cantina Virtual FIAP** foi desenvolvido para solucionar esse problema, permitindo que os alunos visualizem o cardápio e realizem pedidos antecipadamente, reduzindo filas e otimizando o tempo de intervalo.
+
+
+
+
+## Funcionalidades: 
+
+- Visualizar o cardapio
+- Adicionar produtos no carrinho
+- Escolher forma de pagamento
+- Pagar na hora
+- Reservar pedido para pagamento presencial
+
+# Como Rodar o Projeto:
+## Pré-requisitos:
+- Node.js
+- Expo Go (Celular ou Emulador)
+- Android Studio (Para emulador Android)
+- Git (Opcional)
+- Visual Studio Code (Opcional)
+
+## Passo a Passo
+1. Clonar o repositório
+
+   ```bash
+   git clone https://github.com/linard07/fiap-mdi-cp1-cantina-app.git
+   ```
+
+2. Entrar na pasta do projeto
+
+   ```bash
+   cd fiap-mdi-cp1-cantina-app
+   ```
+3. Instalar as dependências
 
    ```bash
    npm install
    ```
 
-2. Start the app
+4. Iniciar o projeto
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+5. Abrir no emulador Android
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   Abra o Android Studio
+   Inicie o emulador
+   Pressione a no terminal
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# Demonstração
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Decisões Técnicas:
 
-## Learn more
+## Estrutura do Projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+O projeto foi estruturado separando as telas dentro da pasta "screens", facilitando a organização e manutenção do código.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Estrutura principal:
 
-## Join the community
+- App.js → Responsável pela navegação entre as telas
+- screens/
+  - HomeScreen.js → Tela inicial
+  - MenuScreen.js → Tela de cardápio
+  - CartScreen.js → Tela de carrinho
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Hooks Utilizados
+
+Durante o desenvolvimento foram utilizados os seguintes hooks do React:
+
+- useState → Utilizado para gerenciar estados como lista de produtos e carrinho de compras
+- useState foi utilizado nas telas:
+  - MenuScreen → Armazenar lista de produtos
+  - CartScreen → Armazenar itens do carrinho
+ 
+---
+
+## Tecnologias Utilizadas
+
+- React Native
+- Expo
+- React Navigation
+- JavaScript
+
+
+---
+
+## Navegação
+
+A navegação foi implementada utilizando React Navigation com Native Stack Navigator.
+
+Foram criadas três telas principais:
+
+- Home → Tela inicial do aplicativo
+- Menu → Tela de visualização do cardápio
+- Cart → Tela de carrinho de compras
+
+A navegação foi configurada no arquivo App.js utilizando NavigationContainer e createNativeStackNavigator, permitindo a transição entre as telas do aplicativo.
+
+Além disso, foram utilizados parâmetros de navegação para enviar dados entre as telas, como o envio do produto selecionado da tela Menu para a tela Cart.
+
+
+
+# Próximos Passos:
+- Melhorar a forma de organização do menu
+- Implementar mais formas de pagamento
+- Sistema de login com o perfil do aluno
+   
+
+
+
