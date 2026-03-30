@@ -72,9 +72,14 @@
    Pressione a no terminal
    ```
 
+6. Abrir no Expo go
+      ```bash
+   Escanear o QR code gerado pelo celular
+   ```
+
 # Demonstração
 
-
+https://youtube.com/shorts/PiSrS57ieDY?feature=share
 
 
 # Decisões Técnicas:
@@ -131,9 +136,11 @@ Além disso, foram utilizados parâmetros de navegação para enviar dados entre
 
 
 # Próximos Passos:
-- Melhorar a forma de organização do menu
+- Melhorar a forma de organização do cardápio
 - Implementar mais formas de pagamento
 - Sistema de login com o perfil do aluno
+- Implementar maneira de escolher mais de um item por vez
+- Implementar histórico de compras
    
 
 
