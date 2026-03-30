@@ -74,19 +74,22 @@
 
 # Demonstração
 
+
+
+
 # Decisões Técnicas:
 
 ## Estrutura do Projeto
 
-O projeto foi estruturado de forma organizada, separando as telas em uma pasta específica chamada "screens". Isso facilita a manutenção do código e melhora a organização do projeto.
+O projeto foi estruturado separando as telas dentro da pasta "screens", facilitando a organização e manutenção do código.
 
 Estrutura principal:
 
-- App.js → Arquivo principal responsável pela navegação
-- screens/ → Contém as telas do aplicativo
-  - HomeScreen
-  - MenuScreen
-  - CartScreen
+- App.js → Responsável pela navegação entre as telas
+- screens/
+  - HomeScreen.js → Tela inicial
+  - MenuScreen.js → Tela de cardápio
+  - CartScreen.js → Tela de carrinho
 
 ---
 
@@ -94,12 +97,16 @@ Estrutura principal:
 
 Durante o desenvolvimento foram utilizados os seguintes hooks do React:
 
-- useState → Utilizado para gerenciar estados como carrinho, produtos e informações do usuário
-- useEffect → Utilizado para controle do ciclo de vida dos componentes
+- useState → Utilizado para gerenciar estados como lista de produtos e carrinho de compras
+- useState foi utilizado nas telas:
+  - MenuScreen → Armazenar lista de produtos
+  - CartScreen → Armazenar itens do carrinho
 
 ---
 
 ## Navegação
+
+A navegação foi implementada utilizando React Navigation com Native Stack Navigator.
 
 Foram criadas três telas principais:
 
@@ -109,6 +116,13 @@ Foram criadas três telas principais:
 
 A navegação foi configurada no arquivo App.js utilizando NavigationContainer e createNativeStackNavigator, permitindo a transição entre as telas do aplicativo.
 
+Além disso, foram utilizados parâmetros de navegação para enviar dados entre as telas, como o envio do produto selecionado da tela Menu para a tela Cart.
+
+
+# Próximos Passos:
+- Melhorar a forma de organização do menu
+- Implementar mais formas de pagamento
+- Sistema de login com o perfil do aluno
    
 
 
